@@ -1,0 +1,99 @@
+Vetor [10]
+Tempo Bubble: 296.0ns
+Tempo Selection: 247.0ns
+Tempo Insertion: 200.0ns
+
+Vetor [20]
+Tempo Bubble: 904.0ns
+Tempo Selection: 663.0ns
+Tempo Insertion: 323.0ns
+
+Vetor [30]
+Tempo Bubble: 1790.0ns
+Tempo Selection: 1331.0ns
+Tempo Insertion: 468.0ns
+
+Vetor [40]
+Tempo Bubble: 2942.0ns
+Tempo Selection: 2237.0ns
+Tempo Insertion: 640.0ns
+
+Vetor [50]
+Tempo Bubble: 4489.0ns
+Tempo Selection: 3413.0ns
+Tempo Insertion: 855.0ns
+
+Vetor [60]
+Tempo Bubble: 6059.0ns
+Tempo Selection: 4841.0ns
+Tempo Insertion: 1064.0ns
+
+Vetor [70]
+Tempo Bubble: 8141.0ns
+Tempo Selection: 6694.0ns
+Tempo Insertion: 1959.0ns
+
+Vetor [80]
+Tempo Bubble: 10105.0ns
+Tempo Selection: 8441.0ns
+Tempo Insertion: 1562.0ns
+
+Vetor [90]
+Tempo Bubble: 13747.0ns
+Tempo Selection: 10600.0ns
+Tempo Insertion: 1797.0ns
+
+Vetor [100]
+Tempo Bubble: 15149.0ns
+Tempo Selection: 12952.0ns
+Tempo Insertion: 2095.0ns
+
+Vetor [1000]
+Tempo Bubble: 1.07ms
+Tempo Selection: 1.25ms
+Tempo Insertion: 0.15ms
+
+Vetor [2000]
+Tempo Bubble: 3.7ms
+Tempo Selection: 5.29ms
+Tempo Insertion: 0.51ms
+
+Vetor [3000]
+Tempo Bubble: 8.3ms
+Tempo Selection: 12.03ms
+Tempo Insertion: 1.08ms
+
+Vetor [4000]
+Tempo Bubble: 16.35ms
+Tempo Selection: 21.67ms
+Tempo Insertion: 1.96ms
+
+Vetor [5000]
+Tempo Bubble: 26.33ms
+Tempo Selection: 33.47ms
+Tempo Insertion: 3.05ms
+
+Vetor [6000]
+Tempo Bubble: 38.82ms
+Tempo Selection: 47.52ms
+Tempo Insertion: 4.06ms
+
+Vetor [7000]
+Tempo Bubble: 55.3ms
+Tempo Selection: 65.12ms
+Tempo Insertion: 5.61ms
+
+Vetor [8000]
+Tempo Bubble: 74.73ms
+Tempo Selection: 85.51ms
+Tempo Insertion: 7.39ms
+
+Vetor [9000]
+Tempo Bubble: 95.92ms
+Tempo Selection: 108.49ms
+Tempo Insertion: 9.29ms
+
+Vetor [10000]
+Tempo Bubble: 122.36ms
+Tempo Selection: 134.8ms
+Tempo Insertion: 11.66ms

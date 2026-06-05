@@ -1,159 +1,112 @@
+/*
+    Alunos: Luiz Felipe, Rafaella Alves e Vinícius Vaz
+    Disciplina: Estrutura de Dados
+    Data de codificação: 03/06/2026
+    Objetivo da classe: Essa classe possui os métodos utilizados para resolver o problema.
+    Ela gera os vetores, clona o vetor para não perdê-lo para as proximas execuções, ordena os vetores
+    calculando a média de 100 execuções, e também possui um método para salvar os vetores em um arquivo.
+
+*/
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Random;
 
 public class Utilitarios {
-    public int[] gerarVetoresP(int tam) {
+    private final Random random = new Random();
+    private final Ordena ordena = new Ordena();
+
+    public int[] gerarVetores(int tam) {
         int[] v = new int[tam];
-        Random random = new Random();
         for (int i = 0; i < tam; i++) {
-            v[i] = random.nextInt(500);
+            v[i] = random.nextInt(Integer.MAX_VALUE);
         }
         return v;
     }
 
-    public int[] gerarVetoresG(int tam) {
-        int[] v = new int[tam];
-        Random random = new Random();
-        for (int i = 0; i < tam; i++) {
-            v[i] = random.nextInt(20000);
-        }
-        return v;
-    }
-
-    public int[] clonarVetor(int[] v) {
-        int[] vClone = new int[v.length];
-        for (int i = 0; i < v.length; i++) {
-            vClone[i] = v[i];
-        }
-        return vClone;
-    }
-
-    public void ordenarBubbleP(int[] v) {
-
-        Ordena ordena = new Ordena();
-        int[] bubble;
+    public void ordenarVetoresP(int tam) {
+        double somaBubble = 0;
+        double somaSelection = 0;
+        double somaInsertion = 0;
 
         //Aquecimento
         for (int i = 0; i < 10000; i++) {
-            bubble = clonarVetor(v);
+            int[] v = gerarVetores(tam);
+            int[] bubble = v.clone();
+            int[] selection = v.clone();
+            int[] insertion = v.clone();
             ordena.bubbleSort(bubble);
+            ordena.selectionSort(selection);
+            ordena.insertionSort(insertion);
         }
 
-        double soma = 0;
         for (int i = 0; i < 100; i++) {
-            bubble = clonarVetor(v);
+            int[] v = gerarVetores(tam);
+
+            int[] bubble = v.clone();
             long inicio = System.nanoTime();
             ordena.bubbleSort(bubble);
-            long fim = System.nanoTime();
-            soma += (fim - inicio);
-        }
-        System.out.print("\nTempo Bubble: " + soma / 100 + "Ns");
-    }
+            somaBubble += System.nanoTime() - inicio;
 
-    public void ordenarSelectionP(int[] v) {
-
-        Ordena ordena = new Ordena();
-        int[] selection;
-
-        //Aquecimento
-        for (int i = 0; i < 10000; i++) {
-            selection = clonarVetor(v);
+            int[] selection = v.clone();
+            inicio = System.nanoTime();
             ordena.selectionSort(selection);
+            somaSelection += System.nanoTime() - inicio;
+
+            int[] insertion = v.clone();
+            inicio = System.nanoTime();
+            ordena.insertionSort(insertion);
+            somaInsertion += System.nanoTime() - inicio;
         }
 
-        double soma = 0;
-        for (int i = 0; i < 100; i++) {
-            selection = clonarVetor(v);
-            long inicio = System.nanoTime();
-            ordena.selectionSort(selection);
-            long fim = System.nanoTime();
-            soma += (fim - inicio);
-        }
-        System.out.print("\nTempo Selection: " + soma / 100 + "Ns");
+
+        System.out.print("\nTempo Bubble: " + somaBubble / 100 + "ns");
+        System.out.print("\nTempo Selection: " + somaSelection / 100 + "ns");
+        System.out.println("\nTempo Insertion: " + somaInsertion / 100 + "ns");
     }
 
-    public void ordenarInsertionP(int[] v) {
 
-        Ordena ordena = new Ordena();
-        int[] insertion;
-
-        //Aquecimento
-        for (int i = 0; i < 10000; i++) {
-            insertion = clonarVetor(v);
-            ordena.insertionSort(insertion);
-        }
-
-        double soma = 0;
-        for (int i = 0; i < 100; i++) {
-            insertion = clonarVetor(v);
-            long inicio = System.nanoTime();
-            ordena.insertionSort(insertion);
-            long fim = System.nanoTime();
-            soma += (fim - inicio);
-        }
-        System.out.print("\nTempo Insertion: " + soma / 100 + "Ns");
-    }
-
-    public void ordenarBubbleG(int[] v) {
-        Ordena ordena = new Ordena();
-        int[] bubble;
+    public void ordenarVetoresG(int tam) {
+        double somaBubble = 0;
+        double somaSelection = 0;
+        double somaInsertion = 0;
 
         //Aquecimento
         for (int i = 0; i < 100; i++) {
-            bubble = clonarVetor(v);
+            int[] v = gerarVetores(tam);
+            int[] bubble = v.clone();
+            int[] selection = v.clone();
+            int[] insertion = v.clone();
             ordena.bubbleSort(bubble);
+            ordena.selectionSort(selection);
+            ordena.insertionSort(insertion);
         }
 
-        double soma = 0;
         for (int i = 0; i < 100; i++) {
-            bubble = clonarVetor(v);
+            int[] v = gerarVetores(tam);
+
+            int[] bubble = v.clone();
             long inicio = System.currentTimeMillis();
             ordena.bubbleSort(bubble);
-            long fim = System.currentTimeMillis();
-            soma += (fim - inicio);
-        }
-        System.out.print("\nTempo Bubble: " + soma / 100 + "Ms");
-    }
+            somaBubble += System.currentTimeMillis() - inicio;
 
-    public void ordenarSelectionG(int[] v) {
-
-        Ordena ordena = new Ordena();
-        int[] selection;
-
-        //Aquecimento
-        for (int i = 0; i < 100; i++) {
-            selection = clonarVetor(v);
+            int[] selection = v.clone();
+            inicio = System.currentTimeMillis();
             ordena.selectionSort(selection);
+            somaSelection += System.currentTimeMillis() - inicio;
+
+            int[] insertion = v.clone();
+            inicio = System.currentTimeMillis();
+            ordena.insertionSort(insertion);
+            somaInsertion += System.currentTimeMillis() - inicio;
         }
 
-        double soma = 0;
-        for (int i = 0; i < 100; i++) {
-            selection = clonarVetor(v);
-            long inicio = System.currentTimeMillis();
-            ordena.selectionSort(selection);
-            long fim = System.currentTimeMillis();
-            soma += (fim - inicio);
-        }
-        System.out.print("\nTempo Selection: " + soma / 100 + "Ms");
+
+        System.out.print("\nTempo Bubble: " + somaBubble / 100 + "ms");
+        System.out.print("\nTempo Selection: " + somaSelection / 100 + "ms");
+        System.out.println("\nTempo Insertion: " + somaInsertion / 100 + "ms");
     }
 
-    public void ordenarInsertionG(int[] v) {
 
-        Ordena ordena = new Ordena();
-        int[] insertion;
-
-        //Aquecimento
-        for (int i = 0; i < 100; i++) {
-            insertion = clonarVetor(v);
-            ordena.insertionSort(insertion);
-        }
-        double soma = 0;
-        for (int i = 0; i < 100; i++) {
-            insertion = clonarVetor(v);
-            long inicio = System.currentTimeMillis();
-            ordena.insertionSort(insertion);
-            long fim = System.currentTimeMillis();
-            soma += (fim - inicio);
-        }
-        System.out.print("\nTempo Insertion: " + soma / 100 + "Ms");
-    }
 }
