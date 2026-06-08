@@ -7,4 +7,12 @@
 
 # Objetivo
 
-Implementar os algoritmos de ordenação Bubble Sort, Selection Sort e Insertion Sort, aplicando-os a diferentes conjuntos de dados para analisar e comparar seus desempenhos. O projeto busca medir o tempo médio de execução de cada algoritmo, identificando seu comportamento diante de vetores com diferentes quantidades de elementos.
+Implementar os algoritmos de ordenação Bubble Sort, Selection Sort e Insertion Sort, aplicando-os a diferentes conjuntos de dados para analisar e comparar seus desempenhos. O projeto busca medir o tempo médio de execução de cada algoritmo, identificando seu comportamento diante de vetores com diferentes quantidades de elementos. E transformar o resultado em gráficos para melhor análise e compreensão da comparação dos algoritmos.
+
+# Solução
+
+A solução desenvolvida consiste na implementação dos algoritmos de ordenação Bubble Sort, Selection Sort e Insertion Sort na classe `Ordena`. Os vetores utilizados nos testes são gerados aleatoriamente pela classe `Utilidades`, seguindo os tamanhos definidos para os conjuntos Dataset1 e Dataset2.
+
+Para garantir uma comparação justa, cada algoritmo recebe exatamente os mesmos vetores de entrada. A classe `Teste` é responsável por executar os algoritmos, medir seus tempos de execução utilizando o relógio do sistema e calcular a média de 100 execuções para cada vetor.
+
+Após a coleta dos dados, os tempos médios obtidos são organizados em tabelas e gráficos, permitindo a análise e comparação do desempenho dos algoritmos em diferentes volumes de dados.
