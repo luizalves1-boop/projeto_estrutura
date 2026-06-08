@@ -3,8 +3,8 @@
     Disciplina: Estrutura de Dados
     Data de codificação: 03/06/2026
     Objetivo da classe: Essa classe possui os métodos utilizados para resolver o problema.
-    Ela gera os vetores, clona o vetor para não perdê-lo para as proximas execuções, ordena os vetores
-    calculando a média de 100 execuções, e também possui um método para salvar os vetores em um arquivo.
+    Ela gera os vetores para cada execução, clona o vetor para não perdê-lo para os proximos metodos de ordenação, ordena os vetores e
+    calcula a média de 100 execuções.
 
 */
 
