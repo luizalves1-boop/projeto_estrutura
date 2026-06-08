@@ -1,6 +1,6 @@
 # Projeto Estrtura de Dados
  
- ## Problema:
+ # Problema:
 
 O presente trabalho tem como objetivo implementar e comparar os algoritmos de ordenação Bubble Sort, Selection Sort e Insertion Sort. Para a análise, serão utilizados dois conjuntos de vetores contendo valores aleatórios, com tamanhos variando de 10 a 100 elementos e de 1.000 a 10.000 elementos.
 
