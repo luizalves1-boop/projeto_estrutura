@@ -4,7 +4,7 @@
     Data de codificação: 03/06/2026
     Objetivo da classe: Essa classe foi implementada para executar toda a
     solução do problema (recebe 1 vetor por vez e ordena ele com cada método de ordenação)
-    e já retornar o resultado (retorna o tempo médio de 100 execuções de cada método de ordenação de um vetor).
+    e já retornar o resultado (retorna o tempo médio de 100 execuções de cada método de ordenação).
 
 */
 
