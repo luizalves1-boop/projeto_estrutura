@@ -16,3 +16,9 @@ A solução desenvolvida consiste na implementação dos algoritmos de ordenaç�
 Para garantir uma comparação justa, cada algoritmo recebe exatamente os mesmos vetores de entrada. A classe `Teste` é responsável por executar os algoritmos, medir seus tempos de execução utilizando o relógio do sistema e calcular a média de 100 execuções para cada vetor.
 
 Após a coleta dos dados, os tempos médios obtidos são organizados em tabelas e gráficos, permitindo a análise e comparação do desempenho dos algoritmos em diferentes volumes de dados.
+
+# Saídas
+
+A execução do programa gera os tempos médios de execução dos algoritmos Bubble Sort, Selection Sort e Insertion Sort para cada tamanho de vetor definido nos datasets. Os resultados são apresentados em tabelas contendo o tamanho do vetor e o respectivo tempo médio obtido após 100 execuções.
+
+Além das tabelas, os dados coletados são utilizados na geração de gráficos comparativos, permitindo visualizar o comportamento de cada algoritmo à medida que o volume de dados aumenta e facilitando a análise de desempenho entre eles.
