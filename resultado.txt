@@ -31,12 +31,12 @@ Tempo Insertion: 1064.0ns
 Vetor [70]
 Tempo Bubble: 8141.0ns
 Tempo Selection: 6694.0ns
-Tempo Insertion: 1959.0ns
+Tempo Insertion: 1537.0ns
 
 Vetor [80]
 Tempo Bubble: 10105.0ns
 Tempo Selection: 8441.0ns
-Tempo Insertion: 1562.0ns
+Tempo Insertion: 1614.0ns
 
 Vetor [90]
 Tempo Bubble: 13747.0ns
