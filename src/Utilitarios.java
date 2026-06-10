@@ -17,10 +17,10 @@ public class Utilitarios {
     private final Random random = new Random();
     private final Ordena ordena = new Ordena();
 
-    public int[] gerarVetores(int tam) {
-        int[] v = new int[tam];
+    public Item[] gerarVetores(int tam) {
+        Item[] v = new Item[tam];
         for (int i = 0; i < tam; i++) {
-            v[i] = random.nextInt(Integer.MAX_VALUE);
+            v[i] = new Item(random.nextInt(Integer.MAX_VALUE));
         }
         return v;
     }
@@ -32,29 +32,29 @@ public class Utilitarios {
 
         //Aquecimento
         for (int i = 0; i < 10000; i++) {
-            int[] v = gerarVetores(tam);
-            int[] bubble = v.clone();
-            int[] selection = v.clone();
-            int[] insertion = v.clone();
+            Item[] v = gerarVetores(tam);
+            Item[] bubble = v.clone();
+            Item[] selection = v.clone();
+            Item[] insertion = v.clone();
             ordena.bubbleSort(bubble);
             ordena.selectionSort(selection);
             ordena.insertionSort(insertion);
         }
 
         for (int i = 0; i < 100; i++) {
-            int[] v = gerarVetores(tam);
+            Item[] v = gerarVetores(tam);
 
-            int[] bubble = v.clone();
+            Item[] bubble = v.clone();
             long inicio = System.nanoTime();
             ordena.bubbleSort(bubble);
             somaBubble += System.nanoTime() - inicio;
 
-            int[] selection = v.clone();
+            Item[] selection = v.clone();
             inicio = System.nanoTime();
             ordena.selectionSort(selection);
             somaSelection += System.nanoTime() - inicio;
 
-            int[] insertion = v.clone();
+            Item[] insertion = v.clone();
             inicio = System.nanoTime();
             ordena.insertionSort(insertion);
             somaInsertion += System.nanoTime() - inicio;
@@ -74,29 +74,29 @@ public class Utilitarios {
 
         //Aquecimento
         for (int i = 0; i < 100; i++) {
-            int[] v = gerarVetores(tam);
-            int[] bubble = v.clone();
-            int[] selection = v.clone();
-            int[] insertion = v.clone();
+            Item[] v = gerarVetores(tam);
+            Item[] bubble = v.clone();
+            Item[] selection = v.clone();
+            Item[] insertion = v.clone();
             ordena.bubbleSort(bubble);
             ordena.selectionSort(selection);
             ordena.insertionSort(insertion);
         }
 
         for (int i = 0; i < 100; i++) {
-            int[] v = gerarVetores(tam);
+            Item[] v = gerarVetores(tam);
 
-            int[] bubble = v.clone();
+            Item[] bubble = v.clone();
             long inicio = System.currentTimeMillis();
             ordena.bubbleSort(bubble);
             somaBubble += System.currentTimeMillis() - inicio;
 
-            int[] selection = v.clone();
+            Item[] selection = v.clone();
             inicio = System.currentTimeMillis();
             ordena.selectionSort(selection);
             somaSelection += System.currentTimeMillis() - inicio;
 
-            int[] insertion = v.clone();
+            Item[] insertion = v.clone();
             inicio = System.currentTimeMillis();
             ordena.insertionSort(insertion);
             somaInsertion += System.currentTimeMillis() - inicio;

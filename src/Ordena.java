@@ -8,30 +8,30 @@
 
 public class Ordena {
     //BubbleSort
-    public void bubbleSort(int[] v) {
+    public void bubbleSort(Item[] v) {
         for (int k = v.length; k >= 1; k--) {
             for (int j = 1; j < k; j++) {
-                if (v[j - 1] > v[j])
+                if (v[j - 1].getValor() > v[j].getValor())
                     troca(v, j, j - 1);
             }
         }
     }
 
-    public void troca(int v[], int m, int n) {
-        int aux = v[m];
+    public void troca(Item v[], int m, int n) {
+        Item aux = v[m];
         v[m] = v[n];
         v[n] = aux;
     }
 
     //SelectionSort
-    public void selectionSort(int[] v) {
+    public void selectionSort(Item[] v) {
         for (int i = 0; i < v.length - 1; i++) {
             int min = i;
             for (int j = i + 1; j < v.length; j++) {
-                if (v[j] < v[min])
+                if (v[j].getValor() < v[min].getValor())
                     min = j;
             }
-            int aux = v[min];
+            Item aux = v[min];
             v[min] = v[i];
             v[i] = aux;
         }
@@ -39,12 +39,12 @@ public class Ordena {
 
     //InsertionSort
 
-    public void insertionSort(int[] v) {
+    public void insertionSort(Item[] v) {
         int j = 0;
         for (int i = 1; i < v.length; i++) {
-            int aux = v[i];
+            Item aux = v[i];
             j = i;
-            while (j > 0 && aux < v[j - 1]) {
+            while (j > 0 && aux.getValor() < v[j - 1].getValor()) {
                 v[j] = v[j - 1];
                 j--;
             }
