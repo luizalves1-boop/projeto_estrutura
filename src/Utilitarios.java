@@ -7,10 +7,6 @@
     calcula a média de 100 execuções.
 
 */
-
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.Random;
 
 public class Utilitarios {
@@ -29,19 +25,7 @@ public class Utilitarios {
         double somaBubble = 0;
         double somaSelection = 0;
         double somaInsertion = 0;
-
-        //Aquecimento
         for (int i = 0; i < 10000; i++) {
-            Item[] v = gerarVetores(tam);
-            Item[] bubble = v.clone();
-            Item[] selection = v.clone();
-            Item[] insertion = v.clone();
-            ordena.bubbleSort(bubble);
-            ordena.selectionSort(selection);
-            ordena.insertionSort(insertion);
-        }
-
-        for (int i = 0; i < 100; i++) {
             Item[] v = gerarVetores(tam);
 
             Item[] bubble = v.clone();
@@ -59,11 +43,9 @@ public class Utilitarios {
             ordena.insertionSort(insertion);
             somaInsertion += System.nanoTime() - inicio;
         }
-
-
-        System.out.print("\nTempo Bubble: " + somaBubble / 100 + "ns");
-        System.out.print("\nTempo Selection: " + somaSelection / 100 + "ns");
-        System.out.println("\nTempo Insertion: " + somaInsertion / 100 + "ns");
+        System.out.print("\nTempo Bubble: " + somaBubble / 10000 + "ns");
+        System.out.print("\nTempo Selection: " + somaSelection / 10000 + "ns");
+        System.out.println("\nTempo Insertion: " + somaInsertion / 10000 + "ns");
     }
 
 
@@ -71,18 +53,6 @@ public class Utilitarios {
         double somaBubble = 0;
         double somaSelection = 0;
         double somaInsertion = 0;
-
-        //Aquecimento
-        for (int i = 0; i < 100; i++) {
-            Item[] v = gerarVetores(tam);
-            Item[] bubble = v.clone();
-            Item[] selection = v.clone();
-            Item[] insertion = v.clone();
-            ordena.bubbleSort(bubble);
-            ordena.selectionSort(selection);
-            ordena.insertionSort(insertion);
-        }
-
         for (int i = 0; i < 100; i++) {
             Item[] v = gerarVetores(tam);
 
@@ -101,8 +71,6 @@ public class Utilitarios {
             ordena.insertionSort(insertion);
             somaInsertion += System.currentTimeMillis() - inicio;
         }
-
-
         System.out.print("\nTempo Bubble: " + somaBubble / 100 + "ms");
         System.out.print("\nTempo Selection: " + somaSelection / 100 + "ms");
         System.out.println("\nTempo Insertion: " + somaInsertion / 100 + "ms");

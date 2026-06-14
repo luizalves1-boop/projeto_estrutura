@@ -1,99 +1,100 @@
 Vetor [10]
-Tempo Bubble: 296.0ns
-Tempo Selection: 247.0ns
-Tempo Insertion: 200.0ns
+Tempo Bubble: 1221.6ns
+Tempo Selection: 495.13ns
+Tempo Insertion: 384.24ns
 
 Vetor [20]
-Tempo Bubble: 904.0ns
-Tempo Selection: 663.0ns
-Tempo Insertion: 323.0ns
+Tempo Bubble: 1631.46ns
+Tempo Selection: 976.68ns
+Tempo Insertion: 481.49ns
 
 Vetor [30]
-Tempo Bubble: 1790.0ns
-Tempo Selection: 1331.0ns
-Tempo Insertion: 468.0ns
+Tempo Bubble: 2503.43ns
+Tempo Selection: 2024.48ns
+Tempo Insertion: 809.18ns
 
 Vetor [40]
-Tempo Bubble: 2942.0ns
-Tempo Selection: 2237.0ns
-Tempo Insertion: 640.0ns
+Tempo Bubble: 4169.49ns
+Tempo Selection: 3470.62ns
+Tempo Insertion: 1239.16ns
 
 Vetor [50]
-Tempo Bubble: 4489.0ns
-Tempo Selection: 3413.0ns
-Tempo Insertion: 855.0ns
+Tempo Bubble: 6243.44ns
+Tempo Selection: 5425.15ns
+Tempo Insertion: 1726.18ns
 
 Vetor [60]
-Tempo Bubble: 6059.0ns
-Tempo Selection: 4841.0ns
-Tempo Insertion: 1064.0ns
+Tempo Bubble: 8796.29ns
+Tempo Selection: 7786.21ns
+Tempo Insertion: 2333.98ns
 
 Vetor [70]
-Tempo Bubble: 8141.0ns
-Tempo Selection: 6694.0ns
-Tempo Insertion: 1537.0ns
+Tempo Bubble: 11446.08ns
+Tempo Selection: 10325.75ns
+Tempo Insertion: 2918.33ns
 
 Vetor [80]
-Tempo Bubble: 10105.0ns
-Tempo Selection: 8441.0ns
-Tempo Insertion: 1614.0ns
+Tempo Bubble: 14292.18ns
+Tempo Selection: 13322.43ns
+Tempo Insertion: 3551.72ns
 
 Vetor [90]
-Tempo Bubble: 13747.0ns
-Tempo Selection: 10600.0ns
-Tempo Insertion: 1797.0ns
+Tempo Bubble: 17798.22ns
+Tempo Selection: 16854.05ns
+Tempo Insertion: 4288.07ns
 
 Vetor [100]
-Tempo Bubble: 15149.0ns
-Tempo Selection: 12952.0ns
-Tempo Insertion: 2095.0ns
+Tempo Bubble: 21258.14ns
+Tempo Selection: 20667.23ns
+Tempo Insertion: 5152.03ns
+
 
 Vetor [1000]
-Tempo Bubble: 1.07ms
-Tempo Selection: 1.25ms
-Tempo Insertion: 0.15ms
+Tempo Bubble: 2.02ms
+Tempo Selection: 0.55ms
+Tempo Insertion: 0.48ms
 
 Vetor [2000]
-Tempo Bubble: 3.7ms
-Tempo Selection: 5.29ms
-Tempo Insertion: 0.51ms
+Tempo Bubble: 6.72ms
+Tempo Selection: 1.91ms
+Tempo Insertion: 1.56ms
 
 Vetor [3000]
-Tempo Bubble: 8.3ms
-Tempo Selection: 12.03ms
-Tempo Insertion: 1.08ms
+Tempo Bubble: 15.94ms
+Tempo Selection: 4.27ms
+Tempo Insertion: 3.51ms
 
 Vetor [4000]
-Tempo Bubble: 16.35ms
-Tempo Selection: 21.67ms
-Tempo Insertion: 1.96ms
+Tempo Bubble: 29.74ms
+Tempo Selection: 7.61ms
+Tempo Insertion: 6.36ms
 
 Vetor [5000]
-Tempo Bubble: 26.33ms
-Tempo Selection: 33.47ms
-Tempo Insertion: 3.05ms
+Tempo Bubble: 48.57ms
+Tempo Selection: 12.08ms
+Tempo Insertion: 9.78ms
 
 Vetor [6000]
-Tempo Bubble: 38.82ms
-Tempo Selection: 47.52ms
-Tempo Insertion: 4.06ms
+Tempo Bubble: 73.72ms
+Tempo Selection: 17.16ms
+Tempo Insertion: 14.73ms
 
 Vetor [7000]
-Tempo Bubble: 55.3ms
-Tempo Selection: 65.12ms
-Tempo Insertion: 5.61ms
+Tempo Bubble: 103.19ms
+Tempo Selection: 26.51ms
+Tempo Insertion: 24.74ms
 
 Vetor [8000]
-Tempo Bubble: 74.73ms
-Tempo Selection: 85.51ms
-Tempo Insertion: 7.39ms
+Tempo Bubble: 135.02ms
+Tempo Selection: 30.42ms
+Tempo Insertion: 27.04ms
 
 Vetor [9000]
-Tempo Bubble: 95.92ms
-Tempo Selection: 108.49ms
-Tempo Insertion: 9.29ms
+Tempo Bubble: 175.67ms
+Tempo Selection: 39.01ms
+Tempo Insertion: 34.19ms
 
 Vetor [10000]
-Tempo Bubble: 122.36ms
-Tempo Selection: 134.8ms
-Tempo Insertion: 11.66ms
+Tempo Bubble: 225.24ms
+Tempo Selection: 53.08ms
+Tempo Insertion: 48.22ms

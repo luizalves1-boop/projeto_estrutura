@@ -17,12 +17,9 @@ public class Teste {
             System.out.print("\nVetor [" + dataset1[i] + "]");
             utilitarios.ordenarVetoresP(dataset1[i]);
         }
-
         for (int i = 0; i < dataset2.length; i++) {
             System.out.print("\nVetor [" + dataset2[i] + "]");
             utilitarios.ordenarVetoresG(dataset2[i]);
         }
-
-
     }
 }
