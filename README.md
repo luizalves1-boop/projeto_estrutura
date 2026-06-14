@@ -19,13 +19,9 @@ Após a coleta dos dados, os tempos médios obtidos são organizados em tabelas 
 
 # Saídas
 
-A execução do programa gera os tempos médios de execução dos algoritmos Bubble Sort, Selection Sort e Insertion Sort para cada tamanho de vetor definido nos datasets. Os resultados são apresentados em tabelas contendo o tamanho do vetor e o respectivo tempo médio obtido após 100 execuções.
+A execução do programa gera os tempos médios de execução dos algoritmos Bubble Sort, Selection Sort e Insertion Sort para cada tamanho de vetor definido nos datasets. Os resultados são apresentados em tabelas contendo o tamanho do vetor e o respectivo tempo médio obtido após 10000 execuções para o Data set 1 e 100 execuções para o Data set 2.
 
 Além das tabelas, os dados coletados são utilizados na geração de gráficos comparativos, permitindo visualizar o comportamento de cada algoritmo à medida que o volume de dados aumenta e facilitando a análise de desempenho entre eles.
-
-# Conclusão
-
-Os resultados experimentais mostraram crescimento aproximadamente quadrático para os três algoritmos analisados, confirmando a complexidade teórica O(n²). O Insertion Sort apresentou os menores tempos médios em todos os conjuntos de dados, seguido pelo Selection Sort. O Bubble Sort apresentou o pior desempenho, especialmente para vetores maiores, devido ao elevado número de trocas realizadas durante a ordenação.
 
 ## Tabelas
    Data set 1 em Nanosegundos
@@ -36,3 +32,6 @@ Os resultados experimentais mostraram crescimento aproximadamente quadrático pa
   
 ![Data set 2](https://github.com/luizalves1-boop/projeto_estrutura/blob/master/TabelaDataSet2.png?raw=true)
 
+# Conclusão
+
+Os resultados experimentais mostraram crescimento aproximadamente quadrático para os três algoritmos analisados, confirmando a complexidade teórica O(n²). O Insertion Sort apresentou os menores tempos médios em todos os conjuntos de dados, seguido pelo Selection Sort. O Bubble Sort apresentou o pior desempenho, especialmente para vetores maiores, devido ao elevado número de trocas realizadas durante a ordenação.
