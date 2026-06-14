@@ -26,3 +26,6 @@ Além das tabelas, os dados coletados são utilizados na geração de gráficos 
 # Conclusão
 
 Os resultados experimentais mostraram crescimento aproximadamente quadrático para os três algoritmos analisados, confirmando a complexidade teórica O(n²). O Insertion Sort apresentou os menores tempos médios em todos os conjuntos de dados, seguido pelo Selection Sort. O Bubble Sort apresentou o pior desempenho, especialmente para vetores maiores, devido ao elevado número de trocas realizadas durante a ordenação.
+
+# Tabelas
+
