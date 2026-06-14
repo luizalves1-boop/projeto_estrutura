@@ -4,7 +4,7 @@
     Data de codificação: 03/06/2026
     Objetivo da classe: Essa classe possui os métodos utilizados para resolver o problema.
     Ela gera os vetores para cada execução, clona o vetor para não perdê-lo para os proximos metodos de ordenação, ordena os vetores e
-    calcula a média de 100 execuções.
+    calcula a média de 10000 execuções para o Data set 1 e 100 execuções para o Data set 2.
 
 */
 import java.util.Random;
