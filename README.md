@@ -30,7 +30,7 @@ Além das tabelas, os dados coletados são utilizados na geração de gráficos 
 
   Data set 2 em Milisegundos
   
-![Data set 2](https://github.com/luizalves1-boop/projeto_estrutura/blob/master/TabelaDataSet2.png?raw=true)
+![Data set 2](https://github.com/luizalves1-boop/projeto_estrutura/blob/master/TabelaDataSet2Corrigida.png?raw=true)
 
 # Gráficos
 
