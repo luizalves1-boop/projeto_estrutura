@@ -23,7 +23,7 @@ A execução do programa gera os tempos médios de execução dos algoritmos Bub
 
 Além das tabelas, os dados coletados são utilizados na geração de gráficos comparativos, permitindo visualizar o comportamento de cada algoritmo à medida que o volume de dados aumenta e facilitando a análise de desempenho entre eles.
 
-## Tabelas
+# Tabelas
    Data set 1 em Nanosegundos
    
 ![Data set 1](https://github.com/luizalves1-boop/projeto_estrutura/blob/master/TabelaDataSet1.png?raw=true) 
@@ -31,6 +31,12 @@ Além das tabelas, os dados coletados são utilizados na geração de gráficos 
   Data set 2 em Milisegundos
   
 ![Data set 2](https://github.com/luizalves1-boop/projeto_estrutura/blob/master/TabelaDataSet2.png?raw=true)
+
+# Gráficos
+
+![Data set 1](https://github.com/luizalves1-boop/projeto_estrutura/blob/master/Gr%C3%A1ficoDataSet1.png?raw=true)
+
+![Data set 2](https://github.com/luizalves1-boop/projeto_estrutura/blob/master/Gr%C3%A1ficoDataSet2.png?raw=true)
 
 # Conclusão
 
