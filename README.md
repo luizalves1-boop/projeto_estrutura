@@ -29,6 +29,4 @@ Os resultados experimentais mostraram crescimento aproximadamente quadrático pa
 
 # Tabelas
 
-<p align="center">
-  <img src="https://github.com/luizalves1-boop/projeto_estrutura/blob/master/TabelaDataSet1.png?raw=true" width="500" alt="DataSet 1 em Nanosegundos">
-</p>
+![Data set 1](https://github.com/luizalves1-boop/projeto_estrutura/blob/master/TabelaDataSet1.png?raw=true)
