@@ -27,8 +27,8 @@ Além das tabelas, os dados coletados são utilizados na geração de gráficos 
 
 Os resultados experimentais mostraram crescimento aproximadamente quadrático para os três algoritmos analisados, confirmando a complexidade teórica O(n²). O Insertion Sort apresentou os menores tempos médios em todos os conjuntos de dados, seguido pelo Selection Sort. O Bubble Sort apresentou o pior desempenho, especialmente para vetores maiores, devido ao elevado número de trocas realizadas durante a ordenação.
 
-# Tabelas
-        Data set 1 em Nanosegundos
-![Data set 1](https://github.com/luizalves1-boop/projeto_estrutura/blob/master/TabelaDataSet1.png?raw=true)
-        Data set 2 em Milisegundos
-![Data set 1](https://github.com/luizalves1-boop/projeto_estrutura/blob/master/TabelaDataSet1.png?raw=true)
+## Tabelas
+   Data set 1 em Nanosegundos
+![Data set 1](https://github.com/luizalves1-boop/projeto_estrutura/blob/master/TabelaDataSet1.png?raw=true) Data set 2 em Milisegundos
+![Data set 2](https://github.com/luizalves1-boop/projeto_estrutura/blob/master/TabelaDataSet2.png?raw=true)
+
