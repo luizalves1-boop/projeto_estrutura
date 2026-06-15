@@ -2,7 +2,7 @@
     Alunos: Luiz Felipe, Rafaella Alves e Vinícius Vaz
     Disciplina: Estrutura de Dados
     Data de codificação: 03/06/2026
-    Objetivo da classe: Essa classe é utilizada para armazenar o vetor enquanto o mesmo é ordenado.
+    Objetivo da classe: Essa classe é utilizada para armazenar o vetor.
 
 */
 
