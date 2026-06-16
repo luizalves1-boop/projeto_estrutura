@@ -36,7 +36,7 @@ Além das tabelas, os dados coletados são utilizados na geração de gráficos 
 
 ![Data set 1](https://github.com/luizalves1-boop/projeto_estrutura/blob/master/Gr%C3%A1ficoDataSet1.png?raw=true)
 
-![Data set 2](https://github.com/luizalves1-boop/projeto_estrutura/blob/master/Gr%C3%A1ficoDataSet2.png?raw=true)
+![Data set 2](https://github.com/luizalves1-boop/projeto_estrutura/blob/master/Gr%C3%A1ficoDataSet2Corrigido.png?raw=true)
 
 # Conclusão
 
